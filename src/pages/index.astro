@@ -1,0 +1,112 @@
+---
+import { Picture } from 'astro:assets';
+import img1 from '../assets/img/image-1.png';
+import img2 from '../assets/img/image-2.png';
+import img3 from '../assets/img/image-3.png';
+import img4 from '../assets/img/image-4.png';
+import img5 from '../assets/img/image-5.png';
+import img6 from '../assets/img/image-6.png';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Perum</title>
+	</head>
+	<body>
+		<nav class="absolute min-w-full py-4">
+			<div class="container mx-auto">
+				<div class="flex gap-8 justify-between text-white">
+					<div class="flex justify-center text-center">
+						<a href="/" class="font-semibold text-xl">Perum</a>
+					</div>
+					<div class="flex gap-8">
+						<a href="#">Contact Us</a>
+						<a href="#">About Us</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="py-20 min-h-screen bg-hero-img bg-cover bg-center">
+				<div class="container mx-auto">
+					<div class="flex flex-col gap-4 text-center text-white">
+						<h1 class="text-6xl">More Comfortable. <br> More Classy.</h1>
+						<p class="text-xl">Make your living experience even more memorable.</p>
+					</div>
+				</div>
+		</section>
+		<section class="py-20">
+			<div class="container mx-auto">
+				<div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-4">
+					<div class="lg:row-span-2">
+						<h1 class="text-4xl">Enjoy Quality Life in <br> Perumnas Housing</h1>
+					</div>
+					<div class="">
+						<p class="text-lg text-zinc-500">Perumnas cluster housing is the right choice for those of you who are looking for comfortable, safe and affordable housing. With the cluster concept, you can enjoy the privacy and comfort of living in a beautiful and clean environment. Apart from that, you can also enjoy the various facilities provided, such as playgrounds, sports fields, shopping centers, schools, and others.</p>
+					</div>	
+					<div class="lg:col-start-2">
+						<div class="flex gap-20 pt-4">
+							<div class="flex flex-col">
+								<span class="font-semibold text-3xl">+100</span>
+								<p class="text-zinc-400">Unit ready</p>	
+							</div>
+							<div class="flex flex-col">
+								<span class="font-semibold text-3xl">+60K</span>
+								<p class="text-zinc-400">Customers</p>	
+							</div>
+							<div class="flex flex-col">
+								<span class="font-semibold text-3xl">+70K</span>
+								<p class="text-zinc-400">Review</p>	
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</section>
+		<section class="pb-20">
+			<div class="container mx-auto">
+				<div class="flex flex-col sm:flex-row gap-4">
+					<Picture src={img1} alt="image-1" formats={['avif', 'webp']}/>
+					<Picture src={img2} alt="image-2" formats={['avif', 'webp']}/>
+					<Picture src={img3} alt="image-3" formats={['avif', 'webp']}/>
+				</div>
+				<div class="pt-12 grid lg:grid-cols-2 grid-rows-3 gap-4">
+					<div class="lg:row-span-3 hidden lg:block"></div>
+					<div class="flex flex-col gap-3">
+						<h1 class="text-2xl">Strategic Location</h1>
+						<p class="text-lg text-zinc-500">Cluster housing perumnas is located in an area that is easily accessible from various directions. You can reach the city center, airport, train station, bus terminal, and other important places easily and quickly.</p>
+					</div>
+					<div class="lg:col-start-2 flex flex-col gap-3">
+						<h1 class="text-2xl">Modern Design</h1>
+						<p class="text-lg text-zinc-500">Cluster housing perumnas has a modern and elegant house design. You can choose the type of house that suits your taste and needs, ranging from type 36 to type 120. </p>
+					</div>
+					<div class="lg:col-start-2 lg:row-start-3 flex flex-col gap-3">
+						<h1 class="text-2xl">Guaranteed Security</h1>
+						<p class="text-lg text-zinc-500">Cluster housing perumnas has an integrated security system. Each cluster is equipped with a fence, gate, and guard post that are monitored by professional security officers. In addition, each house isalso equipped with a fire alarm and CCTV.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-20">
+			<div class="container mx-auto">
+				<div class="grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8 gap-4">
+					<div class="">
+						<h1 class="text-4xl mb-4">Find Your Dream <br> Home Here</h1>
+						<p class="text-lg text-zinc-500">You can see for yourself how the Perumnas cluster housing offers beautiful and comfortable housing for you and your family. See photos of the house, environment and facilities we provide here.</p></div>
+					<div class="lg:row-span-2">
+					<Picture src={img4} alt="image-4" formats={['avif', 'webp']}/>
+					</div>
+					<div class="sm:row-span-2">
+					<Picture src={img5} alt="image-5" formats={['avif', 'webp']}/>
+					</div>
+					<div class="sm:col-start-2 sm:row-start-3">
+					<Picture src={img6} alt="image-6" formats={['avif', 'webp']}/>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
