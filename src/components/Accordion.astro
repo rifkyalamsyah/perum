@@ -1,0 +1,81 @@
+<div class='flex flex-col gap-4 p-4 rounded-xl border border-zinc-200'>
+  <button class='accordion text-start text-2xl'
+    >What is cluster housing Perum?</button
+  >
+  <div class='panel'>
+    <p class='text-lg text-zinc-500'>
+      Cluster housing Perum is a housing concept that consists of several houses
+      in a gated cluster. Cluster housing Perum offers comfortable, secure, and
+      affordable housing with various complete and modern facilities.
+    </p>
+  </div>
+</div>
+<div class='flex flex-col gap-4 p-4 rounded-xl border border-zinc-200'>
+  <button class='accordion text-start text-2xl'
+    >Where is the location of cluster housing Perum?</button
+  >
+  <div class='panel'>
+    <p class='text-lg text-zinc-500'>
+      Cluster housing Perum is a housing concept that consists of several houses
+      in a gated cluster. Cluster housing Perum offers comfortable, secure, and
+      affordable housing with various complete and modern facilities.
+    </p>
+  </div>
+</div>
+<div class='flex flex-col gap-4 p-4 rounded-xl border border-zinc-200'>
+  <button class='accordion text-start text-2xl'
+    >How much are the prices and types of houses in cluster housing Perum?</button
+  >
+  <div class='panel'>
+    <p class='text-lg text-zinc-500'>
+      Cluster housing Perum is a housing concept that consists of several houses
+      in a gated cluster. Cluster housing Perum offers comfortable, secure, and
+      affordable housing with various complete and modern facilities.
+    </p>
+  </div>
+</div>
+<div class='flex flex-col gap-4 p-4 rounded-xl border border-zinc-200'>
+  <button class='accordion text-start text-2xl'
+    >What are the facilities provided in cluster housing Perum?</button
+  >
+  <div class='panel'>
+    <p class='text-lg text-zinc-500'>
+      Cluster housing Perum is a housing concept that consists of several houses
+      in a gated cluster. Cluster housing Perum offers comfortable, secure, and
+      affordable housing with various complete and modern facilities.
+    </p>
+  </div>
+</div>
+
+<style>
+  .accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+</style>
+
+<script is:inline>
+  var acc = document.getElementsByClassName('accordion');
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function () {
+      this.classList.toggle('active');
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  }
+</script>
